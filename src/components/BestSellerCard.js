@@ -16,28 +16,28 @@ export function BestSellerCard() {
       price: "30",
       fakeprice: "50",
       rating: 4.5,
-      url: "https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg",
+      url: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       name: "Western Dress",
       price: "20",
       fakeprice: "40",
       rating: 4.1,
-      url: "https://thecommense.com/cdn/shop/files/B1712562667256_6223d62b-592d-4484-83b6-190951a5d7c9_360x.jpg?v=1720662375",
+      url: "https://img.freepik.com/free-photo/close-up-portrait-elegant-pretty-brunette-woman-stylish-vintage-hat-blue-navy-dress_291049-1132.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
     {
       name: "Girl Dress",
       price: "16",
       fakeprice: "21",
       rating: 3.8,
-      url: "https://tse3.mm.bing.net/th?id=OIP.I2VTQxUG9r6h3AxJlOXudQHaHa&pid=Api&P=0&h=220",
+      url: "https://img.freepik.com/free-photo/stunning-girl-with-wavy-hair-posing-purple-wall-with-surprised-face-expression-indoor-portrait-good-humoured-lady-red-dress-straw-hat_197531-15774.jpg?t=st=1723197377~exp=1723200977~hmac=97104793df81359bb3f74c761ff558f16ebc4253fc387ba53f996c9599f77a54&w=900",
     },
     {
       name: " Sport Wear",
       price: "22",
       fakeprice: "31",
       rating: 4.7,
-      url: "https://i.pinimg.com/originals/bd/68/31/bd683109c8a45507a2181226cc45e3b2.jpg",
+      url: "https://img.freepik.com/free-photo/blond-man-with-hat-brown-background_23-2148316524.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
   ];
   const category = [
@@ -142,74 +142,11 @@ export function BestSellerCard() {
           <a href="#">See more</a>
         </div>
         <div className="cardrow">
-          {/* <div className="card">
-          <div className="cardImg">
-            <img src={image1} className="mainimg" alt="tshirt" />
-            <img src={bestSeller} className="bestseller" alt="tshirt" />
-            <i className="fa fa-heart-o"></i>
-          </div>
-          <div className="carditem">
-            <div className="namePart">
-              <span className="itemname" style={{ fontSize: "28px" }}>
-                T-shirt
-              </span>
-              <div>
-                <span
-                  className="itemprice"
-                  style={{ fontSize: "25px", color: "red", fontWeight: "bold" }}
-                >
-                  $30
-                </span>
-                <span
-                  className="itempriceD"
-                  style={{
-                    fontSize: "15px",
-                    textDecoration: "line-through",
-                    color: "grey",
-                    marginLeft: "10px",
-                  }}
-                >
-                  $50
-                </span>
-              </div>
-            </div>
-            <div className="colorsection">
-              <div className="selectColor">
-                <span style={{ border: "3px solid red" }}>C</span>
-                <span style={{ border: "3px solid green" }}>C</span>
-                <span style={{ border: "3px solid blue" }}>C</span>
-              </div>
-              <div className="selectsize">
-                <span>S</span>
-                <span>M</span>
-                <span>L</span>
-              </div>
-            </div>
-            <div className="lastCardpor">
-              <div>
-                <span
-                  className="fa fa-star"
-                  style={{
-                    marginRight: "3px",
-                    color: "gold",
-                  }}
-                ></span>
-                4.5
-              </div>
-              <div
-                className="buy"
-                style={{ fontSize: "20px", fontWeight: "bold" }}
-              >
-                BUY<span>+</span>{" "}
-              </div>
-            </div>
-          </div>
-        </div> */}
           {bestseller.map((item, index) => (
             <div className="card" data-aos="fade-zoom-in">
               <div className="cardImg">
-                <img src={item.url} className="mainimg" alt="tshirt" />
-                <img src={bestSeller} className="bestseller" alt="tshirt" />
+                <img src={item.url} className="mainimg" />
+                <img src={bestSeller} className="bestseller" />
                 <i className="fa fa-heart-o"></i>
               </div>
               <div className="carditem">
@@ -366,7 +303,25 @@ export function BestSellerCard() {
         <div className="pickRow">
           {toppick.map((item, i) => (
             <div className="pickitem" data-aos="fade-zoom-in">
-              <img style={{ width: "100%", height: "400px" }} src={item.url} />
+              <div
+                style={{
+                  width: "100%",
+                  height: "400px",
+                  overflow: "hidden",
+                  transition: "all ease-in-out 0.35s",
+                }}
+              >
+                <img
+                  style={{
+                    width: "100%",
+                    height: "400px",
+                    transition: " all ease-in-out 0.35s",
+                  }}
+                  src={item.url}
+                  className="pickImg"
+                />
+              </div>
+
               <div style={{ padding: "3px 8px" }}>
                 <span style={{ fontSize: "20px" }}>{item.name}</span>
                 <div>

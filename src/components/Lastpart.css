@@ -1,0 +1,76 @@
+.OurModel {
+  padding-left: 35px;
+  font-size: 25px;
+}
+.slider-container {
+  height: 100vh;
+  cursor: pointer;
+  background-color: transparent;
+}
+.OurModel span {
+  font-size: 30px;
+  color: rgb(255, 35, 72);
+}
+.slider-container {
+  height: 80vh;
+}
+.sliderItems {
+  height: 100%;
+}
+.sliderItems div {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slider-container div img {
+  transition: all ease-in-out 0.35s;
+  height: 100%;
+}
+.slider-container div img:hover {
+  /* transform: scale(1.2); */
+}
+.mediaItem {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  transition: all ease-in-out 0.35s;
+}
+/* Hike */
+.hike {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  min-height: 70vh;
+  margin: 30px auto;
+}
+.hike span {
+  font-size: 47px;
+  color: rgb(255, 35, 72);
+}
+.hikeItem {
+  padding: 10px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hikeItem div {
+  color: gray;
+}
+.hikeItem button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background-color: rgb(255, 35, 72);
+  font-size: 18px;
+  color: white;
+  transition: all ease 0.35s;
+  cursor: pointer;
+}
+.hikeItem button:hover {
+  background-color: rgba(28, 27, 27, 0.854);
+}

@@ -4,7 +4,7 @@ import { Navbar } from "./components/Navbar";
 import { Frontslider } from "./components/FrontSlider";
 import { BestSellerCard } from "./components/BestSellerCard";
 import Lastpart from "./components/Lastpart";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -12,6 +12,7 @@ function App() {
       <Frontslider />
       <BestSellerCard />
       <Lastpart />
+      <Footer />
     </>
   );
 }

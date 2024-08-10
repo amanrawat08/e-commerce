@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <nav>
       <div className="upperNav">
-        The error you're seeing occurs because the import statement in your code
+        Shop Now...!!! Up to 20% discount on each Product
       </div>
       <div className="mainNav">
         <div className="nav1">

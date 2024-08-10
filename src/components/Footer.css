@@ -1,0 +1,87 @@
+footer {
+  margin-top: 60px;
+  width: 100vw;
+  min-height: 80vh;
+  background-color: rgb(255, 35, 72);
+  color: white;
+  display: flex;
+  align-items: center;
+  background-image: url("http://shewalkars.com/wp-content/uploads/2017/10/footer-background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.lists-outer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  list-style: none;
+}
+.lists-outer li {
+  cursor: pointer;
+  transition: all ease-in-out 0.35s;
+  margin: 7px;
+  list-style: none;
+  padding-left: -7px;
+}
+.lists-outer li:hover {
+  color: rgb(255, 35, 72);
+  padding-left: 7px;
+}
+.email {
+  width: 300px;
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(255, 250, 250, 0.539);
+  color: white;
+}
+.Contract {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+::placeholder {
+  color: white;
+}
+.submit {
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 7px 18px;
+  background-color: rgba(0, 0, 0, 0.315);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  transition: all ease 0.35s;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: rgb(0, 0, 0);
+}
+.icons {
+  margin-bottom: -90px;
+  width: 100%;
+  text-align: center;
+}
+.icons i {
+  font-size: 30px;
+  cursor: pointer;
+
+  padding: 10px 12px;
+  border-radius: 50%;
+}
+.icons i:hover {
+  color: rgb(255, 35, 72);
+}
+.footertxt {
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 35, 72);
+}
