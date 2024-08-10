@@ -1,6 +1,9 @@
 import React from "react";
 import "./Navbar.css";
-
+import "./Kitchen.css";
+import { Link } from "react-router-dom";
+import Cloth from "./Cloth";
+import Kitchen from "./Kitchen";
 export function Navbar() {
   return (
     <nav>
@@ -12,7 +15,7 @@ export function Navbar() {
           <span className="logo"> Aman</span>
           <span>
             {" "}
-            <i className="	fa fa-phone"></i> 123432345
+            <i className="	fa fa-phone"></i> 8745845960
           </span>
         </div>
         <div className="nav2">
@@ -32,12 +35,13 @@ export function Navbar() {
         </div>
       </div>
       <div className="bottomNav">
-        <a href="#">Clothes</a>
-        <a href="#">Kitchen</a>
-        <a href="#">Travel</a>
-        <a href="#">Food</a>
-        <a href="#">Personal Care</a>
-        <a href="#">Household Care</a>
+        <Link to="/">Home</Link>
+        <Link to="/cloth">Cloth</Link>
+        <Link to="/kitchen">Kitchen</Link>
+        <Link to="/Travel">Travel</Link>
+        <Link to="/Food">Food</Link>
+        <Link to="/PersonalCare">Personal Care</Link>
+        <Link to="/HouseholdCare">Household Care</Link>
       </div>
     </nav>
   );

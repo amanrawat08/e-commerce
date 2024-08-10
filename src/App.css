@@ -3,7 +3,9 @@
   height: 6px;
   border-radius: 10px;
 }
-
+.active {
+  color: red;
+}
 ::-webkit-scrollbar-track {
   background-color: rgb(227, 227, 227);
 }
