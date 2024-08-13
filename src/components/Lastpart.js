@@ -154,7 +154,11 @@ function Lastpart() {
         </div>
         <div className="pickRow">
           {toppick.map((item, i) => (
-            <div className="pickitem" data-aos="fade-zoom-in">
+            <div
+              className="pickitem"
+              data-aos="fade-zoom-in"
+              data-aos-once="true"
+            >
               <div
                 style={{
                   width: "100%",
@@ -256,7 +260,11 @@ function Lastpart() {
       >
         <Slider {...settings}>
           {videoSlider.map((item, index) => (
-            <div style={{ width: "350px" }}>
+            <div
+              style={{ width: "350px" }}
+              data-aos="fade-zoom-in"
+              data-aos-once="true"
+            >
               <video
                 style={{
                   objectFit: "contain",

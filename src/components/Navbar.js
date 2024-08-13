@@ -37,7 +37,7 @@ export function Navbar() {
       <div className="bottomNav">
         <Link to="/">Home</Link>
         <Link to="/cloth">Cloth</Link>
-        <Link to="/kitchen">Kitchen</Link>
+        <Link to="/Kitchen">Kitchen</Link>
         <Link to="/Travel">Travel</Link>
         <Link to="/Food">Food</Link>
         <Link to="/PersonalCare">Personal Care</Link>

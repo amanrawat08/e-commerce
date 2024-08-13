@@ -1,12 +1,10 @@
 import React from "react";
-import kitchen from "./KitchenData.js";
+import TravelData from "./TravelData";
 import { Link, useParams } from "react-router-dom";
-
-export default function Kitchen() {
-  console.log(kitchen);
+export default function Travel() {
   return (
     <div className="pickRow">
-      {kitchen?.map((item, i) => (
+      {TravelData?.map((item, i) => (
         <div
           className="pickitem"
           data-aos="fade-zoom-in"

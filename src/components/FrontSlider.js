@@ -52,7 +52,7 @@ export function Frontslider() {
       </Swiper>
 
       <div className="strength">
-        <div data-aos="flip-right">
+        <div data-aos="flip-right" data-aos-once="true">
           <img src="./images/warrentty.svg" />
           <span>
             {" "}
@@ -62,7 +62,7 @@ export function Frontslider() {
             Product
           </span>
         </div>
-        <div data-aos="flip-right">
+        <div data-aos="flip-right" data-aos-once="true">
           <img src="./images/replacement.svg" />
           <span>
             {" "}
@@ -72,7 +72,7 @@ export function Frontslider() {
             Product
           </span>
         </div>
-        <div data-aos="flip-right">
+        <div data-aos="flip-right" data-aos-once="true">
           <img src="./images/delivery.svg" />
           <span>
             Best{" "}
@@ -82,7 +82,7 @@ export function Frontslider() {
             </span>
           </span>
         </div>
-        <div data-aos="flip-right">
+        <div data-aos="flip-right" data-aos-once="true">
           <img src="./images/gstbill.svg" />
           <span>
             {" "}

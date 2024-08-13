@@ -143,7 +143,7 @@ export function BestSellerCard() {
         </div>
         <div className="cardrow">
           {bestseller.map((item, index) => (
-            <div className="card" data-aos="fade-zoom-in">
+            <div className="card" data-aos="fade-zoom-in" data-aos-once="true">
               <div className="cardImg">
                 <img src={item.url} className="mainimg" />
                 <img src={bestSeller} className="bestseller" />
@@ -221,7 +221,12 @@ export function BestSellerCard() {
         </div>
         <div className="categitem">
           {category.map((categ, i) => (
-            <div className="categ-card" key={i} data-aos="fade-zoom-in">
+            <div
+              className="categ-card"
+              key={i}
+              data-aos="fade-zoom-in"
+              data-aos-once="true"
+            >
               <img src={categ.url} />
               <span
                 style={{
@@ -247,6 +252,7 @@ export function BestSellerCard() {
           {videos.map((item, index) => (
             <div
               data-aos="fade-zoom-in"
+              data-aos-once="true"
               style={{
                 width: "320px",
                 height: "370px",
@@ -302,7 +308,11 @@ export function BestSellerCard() {
         </div>
         <div className="pickRow">
           {toppick.map((item, i) => (
-            <div className="pickitem" data-aos="fade-zoom-in">
+            <div
+              className="pickitem"
+              data-aos="fade-zoom-in"
+              data-aos-once="true"
+            >
               <div
                 style={{
                   width: "100%",
