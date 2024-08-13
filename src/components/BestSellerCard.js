@@ -8,6 +8,7 @@ import headphone from "../asserts/video/headphone.mp4";
 import tshirt from "../asserts/video/tshirt.mp4";
 import phone from "../asserts/video/phone.mp4";
 import watch from "../asserts/video/watch.mp4";
+import { Link } from "react-router-dom";
 
 export function BestSellerCard() {
   const bestseller = [
@@ -139,7 +140,9 @@ export function BestSellerCard() {
             {" "}
             <span>Best</span> Seller
           </div>
-          <a href="#">See more</a>
+          <Link to="/cloth">
+            <a href="#">See more</a>
+          </Link>
         </div>
         <div className="cardrow">
           {bestseller.map((item, index) => (

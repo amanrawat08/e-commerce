@@ -41,7 +41,7 @@ export function Navbar() {
         <Link to="/Travel">Travel</Link>
         <Link to="/Food">Food</Link>
         <Link to="/PersonalCare">Personal Care</Link>
-        <Link to="/HouseholdCare">Household Care</Link>
+        <Link to="/Electronic">Electronic</Link>
       </div>
     </nav>
   );
