@@ -33,9 +33,7 @@ export default function Features() {
             {categories.map((c, i) => (
               <li
                 key={i}
-                onClick={(e) => {
-                  setCurrentCategory(e.target.innerText);
-                }}
+                onClick={(e) => setCurrentCategory(c)}
               >
                 {c}
               </li>
@@ -44,51 +42,23 @@ export default function Features() {
         </div>
 
         <Slider {...settings}>
-          {data
-            .filter((p) =>
-              currentCategory ? p.category === currentCategory : true
-            )
-            .map((p, i) => (
-              <div key={i} className=" p-2 ">
-                <div
-                  className="card h-100 text-start p-relative " 
-                >
-                    <button className="btn-cart position-absolute  ">
-                        <FaCartPlus size={20}  />
-                    </button>
-                  <img src={p.thumbnail} alt="" />
-                  <br />
-                   
-                    {p.title && <h5 className="card-title">{p.title}</h5>}
-                  
-                  <div className="rating d-flex align-items-center gap-1">
-                    <span>Rating:</span>
-                    {
-                        p.rating && <span>{p.rating} &#9733;</span>
-                    }
-                  </div>
-                  <div>
-                    <span className="discription">
-                        {p.description && p.description.slice(0, 50) + "..."}
-                    </span> 
-                    <div className="price">${p.price}</div>
-                    
-                  </div>
-                </div>
+          {
+            data.filter(p=>!currentCategory || p.category === currentCategory).map((item) => (
+            <div className="feature-item text-center" key={item.id}>
+              {console.log("inside : " + currentCategory)}
+              <div className="img-feature"> 
+                <img src={item.thumbnail} alt={item.title} />
               </div>
-            ))}
+              <h6 className="title-feature">{item.title}</h6>
+              <p className="price-feature">${item.price}</p>
+              <button className="btn-addcart d-flex align-items-center justify-content-center gap-2">
+                <FaCartPlus /> Add to cart
+              </button>
+            </div>
+          ))
+          }
         </Slider>
-        <ul className="d-none">
-          {data
-            .filter((p) =>
-              currentCategory ? p.category === currentCategory : true
-            )
-            .map((p, i) => (
-              <li key={i}>
-                {p.title} - {p.category}
-              </li>
-            ))}
-        </ul>
+         
       </div>
     </section>
   );
